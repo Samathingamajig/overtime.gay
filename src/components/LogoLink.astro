@@ -1,6 +1,6 @@
 ---
 interface Props {
-  bgColorClass: string;
+  class: string;
   href: string;
 }
 ---
@@ -8,7 +8,7 @@ interface Props {
 <a
   href={Astro.props.href}
   target="_blank"
-  class={`no-underline p-2 rounded-xl grid place-items-center aspect-square cursor-pointer ${Astro.props.bgColorClass}`}
+  class={`no-underline p-2 rounded-xl grid place-items-center aspect-square cursor-pointer filter hover:brightness-125 active:brightness-75 ${Astro.props.class}`}
 >
   <slot />
 </a>

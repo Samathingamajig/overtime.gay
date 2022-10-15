@@ -33,7 +33,7 @@ const twitterUrl = "https://twitter.com/overtimepog";
   <body class="min-h-full bg-slate-900 text-white">
     <main class="flex flex-col items-center gap-8">
       <h1 class="text-6xl font-cursive text-center mt-12">Overtime</h1>
-      <p class="text-center text-lg font-mono opacity-40 px-4">a funny clock on the internet</p>
+      <p class="text-center text-lg font-mono px-4">a funny clock on the internet</p>
       <a href={twitchUrl} target="_blank" class="w-2/3 max-w-[380px]">
         <img
           src="https://static-cdn.jtvnw.net/jtv_user_pictures/fee94c27-500c-4cec-9edf-930ed6b39e7a-profile_image-300x300.png"
@@ -42,21 +42,26 @@ const twitterUrl = "https://twitter.com/overtimepog";
         />
       </a>
       <div class="flex gap-4">
-        <LogoLink href={twitchUrl} bgColorClass="bg-[#9147ff]">
+        <LogoLink href={twitchUrl} class="bg-[#9147ff]">
           <TwitchLogo className="w-10 aspect-square" />
         </LogoLink>
-        <LogoLink href={discordInviteUrl} bgColorClass="bg-[#5865F2]">
+        <LogoLink href={discordInviteUrl} class="bg-[#5865F2]">
           <img
             src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62595384f934b806f37f4956_145dc557845548a36a82337912ca3ac5.svg"
             alt="Discord logo"
             class="w-10 aspect-square"
           />
         </LogoLink>
-        <LogoLink href={twitterUrl} bgColorClass="bg-[#1DA1F2]">
+        <LogoLink href={twitterUrl} class="bg-[#1DA1F2]">
           <TwitterLogo className="w-10 aspect-square" />
         </LogoLink>
-        <LogoLink href={youtubeUrl} bgColorClass="bg-white">
+        <LogoLink href={youtubeUrl} class="bg-white">
           <YouTubeLogo className="w-10 aspect-square" />
+        </LogoLink>
+        <LogoLink
+          href="https://linktr.ee/overtimepog"
+          class="bg-[url(https://lgbtq.co.in/wp-content/uploads/2020/09/bi-pride-flag.jpg)] bg-cover"
+          ><div class="w-10 aspect-square"></div>
         </LogoLink>
       </div>
     </main>
@@ -67,6 +72,10 @@ const twitterUrl = "https://twitter.com/overtimepog";
       <OTImage
         src="https://cdn.discordapp.com/attachments/627909010149867531/1030664178542842038/low_quality_egirl.jpg"
         caption="Overtime in a maid dress :3"
+      />
+      <OTImage
+        src="https://cdn.discordapp.com/attachments/876381738232856610/1030679043223335014/unknown.png"
+        caption="Foster 🤩🤩🤩"
       />
       <OTImage
         src="https://media.discordapp.net/attachments/627909010149867531/1030666532721799268/unknown.png?width=1365&height=910"

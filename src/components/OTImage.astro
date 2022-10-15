@@ -7,5 +7,9 @@ interface Props {
 
 <figure>
   <img src={Astro.props.src} class="w-full max-w-[600px] mt-8 px-8" alt={Astro.props.caption ?? ""} />
-  {Astro.props.caption && <figcaption class="font-cursive text-center">{Astro.props.caption}</figcaption>}
+  {
+    Astro.props.caption && (
+      <figcaption class="font-cursive text-center sm:text-2xl mt-2">{Astro.props.caption}</figcaption>
+    )
+  }
 </figure>
