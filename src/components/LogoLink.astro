@@ -1,0 +1,14 @@
+---
+interface Props {
+  bgColorClass: string;
+  href: string;
+}
+---
+
+<a
+  href={Astro.props.href}
+  target="_blank"
+  class={`no-underline p-2 rounded-xl grid place-items-center aspect-square cursor-pointer ${Astro.props.bgColorClass}`}
+>
+  <slot />
+</a>

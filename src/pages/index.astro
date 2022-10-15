@@ -1,17 +1,81 @@
 ---
+import LogoLink from "../components/LogoLink.astro";
+import OTImage from "../components/OTImage.astro";
+import TwitchLogo from "../logos/TwitchLogo.astro";
+import TwitterLogo from "../logos/TwitterLogo.astro";
+import YouTubeLogo from "../logos/YouTubeLogo.astro";
+
+const twitchUrl = "https://www.twitch.tv/overtimepog";
+const discordInviteUrl = "https://discord.gg/xrmuKxnA4h";
+const youtubeUrl = "https://www.youtube.com/c/Overtimepog/featured";
+const twitterUrl = "https://twitter.com/overtimepog";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <title>Overtime.gay</title>
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet" />
+    <meta property="og:title" content="Overtime.gay" />
+    <meta property="og:description" content={'A website about a "funny" clock on the internet'} />
+    <meta
+      property="og:image"
+      content="https://static-cdn.jtvnw.net/jtv_user_pictures/fee94c27-500c-4cec-9edf-930ed6b39e7a-profile_image-300x300.png"
+    />
+    <meta property="og:site_name" content="overtime.gay" />
+    <meta property="twitter:card" content="summary" />
   </head>
   <body class="min-h-full bg-slate-900 text-white">
-    <main>
-      <h1 class="text-4xl">Some Astro Site</h1>
-      <p>This is a paragraph</p>
+    <main class="flex flex-col items-center gap-8">
+      <h1 class="text-6xl font-cursive text-center mt-12">Overtime</h1>
+      <p class="text-center text-lg font-mono opacity-40 px-4">a funny clock on the internet</p>
+      <a href={twitchUrl} target="_blank" class="w-2/3 max-w-[380px]">
+        <img
+          src="https://static-cdn.jtvnw.net/jtv_user_pictures/fee94c27-500c-4cec-9edf-930ed6b39e7a-profile_image-300x300.png"
+          alt="overtime logo"
+          class="w-full rounded-full drop-shadow-lg cursor-pointer hover:animate-[spin_1s_linear_5s_infinite]"
+        />
+      </a>
+      <div class="flex gap-4">
+        <LogoLink href={twitchUrl} bgColorClass="bg-[#9147ff]">
+          <TwitchLogo className="w-10 aspect-square" />
+        </LogoLink>
+        <LogoLink href={discordInviteUrl} bgColorClass="bg-[#5865F2]">
+          <img
+            src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62595384f934b806f37f4956_145dc557845548a36a82337912ca3ac5.svg"
+            alt="Discord logo"
+            class="w-10 aspect-square"
+          />
+        </LogoLink>
+        <LogoLink href={twitterUrl} bgColorClass="bg-[#1DA1F2]">
+          <TwitterLogo className="w-10 aspect-square" />
+        </LogoLink>
+        <LogoLink href={youtubeUrl} bgColorClass="bg-white">
+          <YouTubeLogo className="w-10 aspect-square" />
+        </LogoLink>
+      </div>
     </main>
+    <div class="mt-[100vh]"></div>
+    <section class="flex items-center flex-col">
+      <h2 class="text-3xl font-cursive text-center">Secrets</h2>
+
+      <OTImage
+        src="https://cdn.discordapp.com/attachments/627909010149867531/1030664178542842038/low_quality_egirl.jpg"
+        caption="Overtime in a maid dress :3"
+      />
+      <OTImage
+        src="https://media.discordapp.net/attachments/627909010149867531/1030666532721799268/unknown.png?width=1365&height=910"
+        caption="Overtime playing the clarinet :O"
+      />
+      <OTImage
+        src="https://media.discordapp.net/attachments/627909010149867531/1030666532138790963/unknown.png?width=683&height=910"
+        caption="Overtime shirtless 🥵🥵🥵"
+      />
+    </section>
   </body>
 </html>
