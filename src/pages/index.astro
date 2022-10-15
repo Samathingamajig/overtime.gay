@@ -1,6 +1,8 @@
 ---
 import LogoLink from "../components/LogoLink.astro";
 import OTImage from "../components/OTImage.astro";
+import BiFlag from "../logos/BiFlag.astro";
+import DiscordLogo from "../logos/DiscordLogo.astro";
 import TwitchLogo from "../logos/TwitchLogo.astro";
 import TwitterLogo from "../logos/TwitterLogo.astro";
 import YouTubeLogo from "../logos/YouTubeLogo.astro";
@@ -60,11 +62,7 @@ const twitterUrl = "https://twitter.com/overtimepog";
           <TwitchLogo className="w-10 aspect-square" />
         </LogoLink>
         <LogoLink href={discordInviteUrl} class="bg-[#5865F2]">
-          <img
-            src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62595384f934b806f37f4956_145dc557845548a36a82337912ca3ac5.svg"
-            alt="Discord logo"
-            class="w-10 aspect-square"
-          />
+          <DiscordLogo className="w-10 aspect-square" />
         </LogoLink>
         <LogoLink href={twitterUrl} class="bg-[#1DA1F2]">
           <TwitterLogo className="w-10 aspect-square" />
@@ -72,11 +70,15 @@ const twitterUrl = "https://twitter.com/overtimepog";
         <LogoLink href={youtubeUrl} class="bg-white">
           <YouTubeLogo className="w-10 aspect-square" />
         </LogoLink>
-        <LogoLink
+        <!-- <LogoLink href="" class="bg-[url(https://lgbtq.co.in/wp-content/uploads/2020/09/bi-pride-flag.jpg)] bg-cover"
+          ><div></div>
+        </LogoLink> -->
+        <a
           href="https://linktr.ee/overtimepog"
-          class="bg-[url(https://lgbtq.co.in/wp-content/uploads/2020/09/bi-pride-flag.jpg)] bg-cover"
-          ><div class="w-10 aspect-square"></div>
-        </LogoLink>
+          target=" _blank"
+          class="no-underline aspect-square cursor-pointer filter hover:brightness-125 active:brightness-75"
+          ><BiFlag className="w-14 rounded-xl aspect-square" />
+        </a>
       </div>
     </main>
     <div class="mt-[100vh]"></div>
