@@ -6,6 +6,7 @@ import DiscordLogo from "../logos/DiscordLogo.astro";
 import TwitchLogo from "../logos/TwitchLogo.astro";
 import TwitterLogo from "../logos/TwitterLogo.astro";
 import YouTubeLogo from "../logos/YouTubeLogo.astro";
+import { RandomAmogus } from "../components/RandomAmogus";
 
 const twitchUrl = "https://www.twitch.tv/overtimepog";
 const discordInviteUrl = "https://discord.gg/xrmuKxnA4h";
@@ -111,5 +112,6 @@ const twitterUrl = "https://twitter.com/overtimepog";
         caption="Overtime contemplating 🤔🤔🤔"
       />
     </section>
+      <RandomAmogus client:only="react" />
   </body>
 </html>
