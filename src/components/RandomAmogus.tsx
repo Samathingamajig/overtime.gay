@@ -1,8 +1,7 @@
 import React from "react";
 
 export const RandomAmogus = () => {
-  const shouldDisplay = React.useRef(Math.random() < 1 / 500);
-  console.log(shouldDisplay.current);
+  const shouldDisplay = React.useRef(Math.random() < 1 / 10);
   if (!shouldDisplay.current) return null;
 
   return (
